@@ -1,12 +1,16 @@
 
-def create_list(starting, ending):
-    """
-    Ex. create_list(4, 10) would return [4, 5, 6, 7, 8, 9, 10]
-    :param starting: an integer number
-    :param ending: A number greater than the starting number
-    :return: list of numbers starting with the first number and going up to and including the second number
-    """
-    pass # remove this line when starting your function
+def create_list(start, end):
+    result_list = []  # Create an empty list to store the numbers
+
+        # Use a for loop to iterate through the range from start to end 
+    for num in range(start, end + 1):
+        result_list.append(num)  # Append each number to the list
+
+    return result_list  # Return the final list
+
+
+result = create_list(4, 10)
+print(result)
 
 
 def find_odds(numbers):
